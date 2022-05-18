@@ -13,7 +13,7 @@
         <h1 class="tx">¡¡Error al iniciar sesion!!</h1>
     </div>
     <div class="cuadro4-error">
-        <a class="cuadro3" href="login.php">Sign in</a>
+        <a class="cuadro3" href="index.php">Sign in</a>
         <a class="cuadro3" href="register.php">Sign up</a>
     </div>
 </body>

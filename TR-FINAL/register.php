@@ -18,7 +18,7 @@ if(isset($_POST['register'])){
         $result = mysqli_query($connect,"INSERT INTO usuario(name,dni,email,password) VALUES('$name','$dni','$email','$password')");
 
         if($result){
-            header("location: login.php");
+            header("location: index.php");
         }else{
             echo "error de registro, intente nuevamente".mysqli_error($connect);
         }
@@ -33,7 +33,7 @@ if(isset($_POST['register'])){
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ZARA/REGISTER</title>
-        <link rel="icon" type="image/x-icon" href="img/logo.jpg" />
+        <link rel="icon" type="image/x-icon" href="img/logo.jpg"/>
         <link rel="stylesheet" href="style.css">
     </head>
     
@@ -64,7 +64,7 @@ if(isset($_POST['register'])){
                                     <button class="login" type="submit" name="register"><span></span>Sign up</button>
                                 </div>
                                 <p class="text-center mt-3">You have an account?                                    
-                                    <a href="login.php">Sign in</a>                                    
+                                    <a href="index.php">Sign in</a>                                    
                                 </p>
                             </form>
                         </div>
